@@ -4,7 +4,6 @@
   display: grid;
   margin-left: 40px;
   &__container {
-    row-gap: 64px;
   }
   &__logo {
     font-size: var(--h2-font-size);
@@ -12,18 +11,18 @@
     color: var(--first-color);
   }
   &__data {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 200px);
   }
   &__title {
     font-size: var(--h3-font-size);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   &__links {
     display: grid;
     row-gap: 12px;
   }
   &__link {
-    color: var(--white-color);
+    color: var(--text-color);
     transition: all 0.3s;
     &:hover {
       color: var(--first-color);
@@ -36,26 +35,33 @@
       border: none;
       outline: none;
       padding: 20px 30px;
-      width: 70%;
-      margin-bottom: 20px;
       border-radius: 64px;
+      margin-bottom: 20px;
       background-color: var(--container-color);
-      color: var(--white-color);
+      color: var(--text-color);
     }
-    button {
-      width: 70%;
-    }
-    &__button {
-      outline: none;
-      border: none;
-    }
-    &__social {
+  }
+  &__button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+    div {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--white-color);
-      div {
-        display: flex;
+      gap: 16px;
+      margin: 10px;
+      a {
+        color: var(--text-color);
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          color: var(--first-color);
+        }
       }
     }
   }
