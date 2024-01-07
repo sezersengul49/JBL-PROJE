@@ -463,7 +463,7 @@
   );
   --white-color: hsl(0, 0%, 100%);
   --text-color: hsl(23, 4%, 60%);
-  --body-color: hsl(23, 12%, 4%);
+  --body-color: hsl(30, 2%, 17%);
   --container-color: hsl(23, 4%, 10%);
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 160px;
